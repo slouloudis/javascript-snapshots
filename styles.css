@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+
+body {
+  font-family: monospace;
+}
+
+menu {
+  margin: 0vw 5vw;
+  padding:0;
+}
+
+.mode--check {
+  display:inline block;
+}
+.dark {
+  background-color: rgb(54, 54, 54);
+  color: white;
+}
+
+.light {
+  background-color: rgb(255, 255, 255);
+  color: rgb(14, 14, 14);
+}
+
+.nav {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav > * {
+  font-family: 'Major Mono Display', monospace;
+  flex-basis: 30vw;
+  margin-left: 5vw;
+}
+
+ul > * {
+  text-align: center;
+  font-family: monospace;
+  list-style: none;
+}
+
+pre {
+  white-space: pre-wrap;
+   margin: 60% 60%;
+}
+
+button {
+  font: inherit;
+  background-color: rgb(214, 214, 214);
+  padding: 10px 25px;
+  border-radius: 5px 5px 0 0;
+
+}
+
+.button--container {
+  display: flex;
+}
+
+.active {
+  background-color: rgb(255, 240, 32);;
+}
+
+
+/* find some way to fix this */
+.language-javascript {
+  margin: 0;
+}
