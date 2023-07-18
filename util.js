@@ -79,7 +79,7 @@ export const content = [
     `});`,
     `console.log(uppercaseCharacters); // Output: ['MARIO', 'LINK']`,
     ``,
-    `// 5. Array.filter(): Creates a new array with all elements that pass the test implemented by the provided callback function.`,
+    `// 5. Array.filter(): Creates a new array with all elements that pass (return true) the condition of the provided callback function.`,
     `const numbers = [1, 5, 10, 15, 20];`,
     `const filteredNumbers = numbers.filter((number) => {`,
     `   return number > 10;`,
