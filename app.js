@@ -69,6 +69,8 @@ function handleClick(event) {
 const lastClickedButtonId = localStorage.getItem('lastClicked');
 if (lastClickedButtonId) {
   displayContent(content[buttonToContentMap[lastClickedButtonId]]);
+} else {
+  displayContent(content[0])
 }
 
 const buttons = document.querySelectorAll('button');
