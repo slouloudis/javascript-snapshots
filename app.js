@@ -64,8 +64,7 @@ function handleClick(event) {
     localStorage.setItem('lastClicked', btnId);
   }
 }
-
-// Display the content of the last clicked button on page reload
+// on page reload
 const lastClickedButtonId = localStorage.getItem('lastClicked');
 if (lastClickedButtonId) {
   displayContent(content[buttonToContentMap[lastClickedButtonId]]);
