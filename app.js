@@ -86,3 +86,5 @@ function highLightBtn(btn) {
   btnArrMethods.className = "";
   btn.className = "active"; // set new style / highlight
 }
+
+
