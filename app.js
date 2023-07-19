@@ -58,9 +58,7 @@ function handleClick(event) {
 
   const contentIndex = buttonToContentMap[btnId];
   if (typeof contentIndex !== 'undefined') {
-    // Display the corresponding content
     displayContent(content[contentIndex]);
-    // Save the last clicked button ID in localStorage
     localStorage.setItem('lastClicked', btnId);
   }
 }
@@ -70,6 +68,7 @@ if (lastClickedButtonId) {
   displayContent(content[buttonToContentMap[lastClickedButtonId]]);
 } else {
   displayContent(content[0])
+  highLightBtn(btnImportExport)
 }
 
 const buttons = document.querySelectorAll('button');
@@ -80,7 +79,7 @@ buttons.forEach((button) => {
 
 // TODO: Refactor this!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 function highLightBtn(btn) {
-  // Clear all existing styling / highlights
+  // clear styles
   btnImportExport.className = "";
   btnArrowFun.className = "";
   btnDestructuring.className = "";

@@ -1,13 +1,3 @@
-// import and export keywords
-
-//import somevalueCanBeAnyTitle from './app.js'
-
-// lets imagine we have an important peice of information that we'll need to reuse across our program
-//const importantInfo = 'Protocol 7'
-// we can make this var available to our other files by using export
-
-//export const importantInfo = 'Protocol 7'
-
 export const content = [
   [          
     `// import and export keywords -> `,
@@ -56,7 +46,6 @@ export const content = [
     `console.log(squaredNumbers); // Output: [1, 4, 9, 16, 25]`,
   ], [
     // Array Methods
-
     `// 1. Array.push(): Adds elements to the end of an array and returns the new length.`,
     `const videoGameCharacters = ['Mario', 'Link'];`,
     `videoGameCharacters.push('Sonic');`,
